@@ -39,7 +39,7 @@ terraform {
 
 # 2. Terraform Provider Block for AzureRM
 provider "azurerm" {
-  subscription_id = "XXXXXXXXXXXXX"
+  subscription_id = "82808767-144c-4c66-a320-b30791668b0a"
   features {
     # Updated as part of June2023 to delete "ContainerInsights Resources" when deleting the Resource Group
     resource_group {
@@ -52,4 +52,3 @@ provider "azurerm" {
 resource "random_pet" "aksrandom" {
 
 }
-
