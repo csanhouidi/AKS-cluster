@@ -77,20 +77,7 @@ oms_agent {
 #    }
 #  }
 
-# RBAC and Azure AD Integration Block
-#  role_based_access_control {
-#    enabled = true
-#    azure_active_directory {
-#      managed = true
-#      admin_group_object_ids = [azuread_group.aks_administrators.id]
-#    }
-#  }
-# Added June 2023
-azure_active_directory_role_based_access_control {
-  #managed = true # COMMENTED OCT2024
-  #admin_group_object_ids = [azuread_group.aks_administrators.id] # COMMENTED OCT2024
-  admin_group_object_ids = [azuread_group.aks_administrators.object_id] # ADDED OCT2024
-}
+
 
 # Windows Profile
   windows_profile {
